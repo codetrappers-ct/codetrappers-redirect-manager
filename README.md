@@ -1,12 +1,12 @@
-# Coetrappers Redirect Manager
+# Codetrappers Redirect Manager
 
-`coetrappers-redirect-manager` is a wordpress plugin for the Coetrappers project set.
+`codetrappers-redirect-manager` is a wordpress plugin for the Codetrappers project set.
 Starter redirect management plugin with a lightweight rule registry.
 The codebase is scaffolded to be a clean starting point, not a complete production feature.
 
 ## Project Summary
 
-- Slug: `coetrappers-redirect-manager`
+- Slug: `codetrappers-redirect-manager`
 - Type: WordPress plugin
 - Focus: redirects, seo, migration
 
@@ -32,8 +32,8 @@ The codebase is scaffolded to be a clean starting point, not a complete producti
 
 ## How To Extend It
 
-- Activate `coetrappers-redirect-manager` from the Plugins screen.
-- Use `coetrappers-redirect-manager.php` as the primary bootstrap file for extension work.
+- Activate `codetrappers-redirect-manager` from the Plugins screen.
+- Use `codetrappers-redirect-manager.php` as the primary bootstrap file for extension work.
 - Keep feature logic inside dedicated classes rather than expanding the root file.
 
 ## Development Notes

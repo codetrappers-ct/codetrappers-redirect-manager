@@ -1,5 +1,5 @@
 {
-  "name": "coetrappers/coetrappers-redirect-manager",
+  "name": "codetrappers/codetrappers-redirect-manager",
   "description": "Starter redirect management plugin with a lightweight rule registry.",
   "type": "wordpress-plugin",
   "license": "GPL-2.0-or-later",
@@ -8,7 +8,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Coetrappers\\\\CoetrappersRedirectManager\\\\": "includes/"
+      "Codetrappers\\\\CodetrappersRedirectManager\\\\": "includes/"
     }
   }
 }

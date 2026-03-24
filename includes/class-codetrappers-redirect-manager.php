@@ -1,12 +1,12 @@
 <?php
-namespace Coetrappers\CoetrappersRedirectManager;
+namespace Codetrappers\CodetrappersRedirectManager;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-class CoetrappersRedirectManagerPlugin {
-	const OPTION_KEY = 'coetrappers-redirect-manager_settings';
+class CodetrappersRedirectManagerPlugin {
+	const OPTION_KEY = 'codetrappers-redirect-manager_settings';
 
 	public function boot() {
 		add_action( 'init', array( $this, 'register_post_meta' ) );
@@ -17,7 +17,7 @@ class CoetrappersRedirectManagerPlugin {
 	public function register_post_meta() {
 		register_post_meta(
 			'',
-			'_coetrappers-redirect-manager_status',
+			'_codetrappers-redirect-manager_status',
 			array(
 				'show_in_rest'      => true,
 				'single'            => true,
@@ -63,7 +63,7 @@ class CoetrappersRedirectManagerPlugin {
 
 		$screen = function_exists( 'get_current_screen' ) ? get_current_screen() : null;
 
-		if ( ! $screen || 'settings_page_coetrappers-redirect-manager' === $screen->id ) {
+		if ( ! $screen || 'settings_page_codetrappers-redirect-manager' === $screen->id ) {
 			return;
 		}
 
@@ -75,7 +75,7 @@ class CoetrappersRedirectManagerPlugin {
 
 		printf(
 			'<div class="notice notice-info"><p>%s</p></div>',
-			esc_html__( 'Coetrappers Redirect Manager starter is active. Extend the bootstrap logic in includes/class-coetrappers-redirect-manager.php.', 'coetrappers-redirect-manager' )
+			esc_html__( 'Codetrappers Redirect Manager starter is active. Extend the bootstrap logic in includes/class-codetrappers-redirect-manager.php.', 'codetrappers-redirect-manager' )
 		);
 	}
 }
